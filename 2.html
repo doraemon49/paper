@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    h1 {color : purple;
+        background-color: gold;
+        text-align: center;
+        font-size: 35px;
+        }
+    h2 {text-align: right;
+        color: gray;}
+    h3 {background-color: hotpink; color: white;
+        text-align: center; font-size: 30px;
+        height: 50px; line-height: 50px;
+        margin-top: 100px;}
+    p {color: blue; font-weight: bold;}
+        .item {background-color: pink;text-align: center; width: 250px; height: 200px;
+            float: left; margin-right: 50px;}
+        .container:after{
+            display: block;
+            content: '';
+            clear: both;
+        
+        }
+        /* float left 쓰면 함께 와야한다. */
+        h4 {color: red; margin-top: 25px;}
+        .container {width:fit-content; margin: 0 auto;}
+        .item:last-child{
+            margin-right: 0;
+        }
+
+
+    
+    </style>
+
+
+
+</head>
+<body>
+<h1>가족신문</h1>
+<h2>2월호</h2>
+<hr>
+<h3>가족 소식</h3>
+<p>2월 여행 계획</p>
+2월은 통영에 루지를 타러 갑니다.
+<br>가족끼리 즐거운 시간을 보내고 옵시다.
+<br>
+
+<img src="./통영.jpg" alt="루지타는 사진">
+<h3>문화생활</h3>
+<div class="container">
+    <div class="item"><h4>이달의 추천 영화</h4>캣츠</div>
+    <div class="item"><h4>이달의 추천 도서</h4>노인과 바다</div class="item" >
+    <div class="item"><h4>이달의 추천 음악</h4>방탄소년단 -Fire</div>
+</div>
+<h3>가족에게 보내는 편지</h3>
+<p>준이가 민이에게</p>
+루지 좋았지? <br>나도 좋았어 <br>조만간 또 오자
+<p>민이가 준이에게</p>
+나도 정말 좋았어 <br>특히 커브길이 젤 스릴있었지
+
+</body>
+</html>
