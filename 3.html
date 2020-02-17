@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/scrolly.min.js"></script>
+    <script src="./js/slick.js"></script>
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/cssanimation.min.css">
+    <style>
+    h1 {color : purple;
+        background-color: gold;
+        text-align: center;
+        font-size: 35px;
+        }
+    h2 {text-align: right;
+        color: gray;}
+    h3 {background-color: hotpink; color: white;
+        text-align: center; font-size: 30px;
+        height: 50px; line-height: 50px;
+        margin-top: 100px;}
+    p {color: blue; font-weight: bold;}
+    h4 {color: red; margin-top: 25px;}
+    .container{height: 300px;}
+    .container img{height: 300px;
+        width: auto;
+        margin: 0 auto;}
+
+
+    
+    </style>
+
+
+
+</head>
+<body>
+<h1>가족신문</h1>
+<h2>3월호</h2>
+<hr>
+<h3>가족 소식</h3>
+<p>3월 여행 계획</p>
+3월은 통영에 루지를 타러 갑니다.
+<br>가족끼리 즐거운 시간을 보내고 옵시다.
+<br>
+
+<img src="./공원.jpg" alt="공원사진">
+
+<div data-scrolly-down="blurInBottom">
+<h3>영화 인기 순위</h3>
+<div class="container">
+    <div class="simg simg1"><img src="./1.jpg" alt=""></div>
+    <div class="simg simg2"><img src="./2.jpg" alt=""></div>
+    <div class="simg simg3"><img src="./3.jpg" alt=""></div>
+    <div class="simg simg4"><img src="./4.jpg" alt=""></div>
+    <div class="simg simg5"><img src="./5.jpg" alt=""></div>
+    <div class="simg simg6"><img src="./6.jpg" alt=""></div>
+
+   </div>
+</div>
+
+<div data-scrolly-click="fadeIn">
+<h3>가족에게 보내는 편지</h3>
+<p>준이가 민이에게</p>
+루지 좋았지? <br>나도 좋았어 <br>조만간 또 오자
+<p>민이가 준이에게</p>
+나도 정말 좋았어 <br>특히 커브길이 젤 스릴있었지
+</div>
+
+<script>
+    window.onload=function(){
+        scrolly();
+    }
+
+    $(document).ready(function(){
+        $('.container').slick({
+            slidesToShow: 4,
+  slidesToScroll: 4,
+  autoplay:true,
+  autoplayspeed:300,
+  arrows:false
+        })
+
+    })
+</script>
+</body>
+</html>
